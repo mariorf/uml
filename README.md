@@ -1,5 +1,9 @@
 # uml
+```mermaid
 
-class Persona {}
+---
+title: Node
+---
+flowchart TD
+    Conejo --> conejo
 
-class Estudiante extends Persona {}
