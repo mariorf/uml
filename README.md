@@ -1,9 +1,18 @@
-# uml
+# UML
+
+# Diagrama Flujo
+
 ```mermaid
 
 ---
-title: Node
+title: Login
 ---
+
 flowchart TD
-    Conejo --> conejo
+    A[IntroducirCampos] --> B(Submit)
+    B --> C{Validar}
+    C -->|CorreoNoExiste| A
+    C -->|Contraseña incorrecta| A
+    C -->|UsuarioNoRegistrado| D[QuiereRegistrarse?] -->E[MostrarVentanaRegistro]
+  
 
